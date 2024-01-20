@@ -1,2 +1,6 @@
 # docker
-Installation of Docker of Ubunto
+Installation of Docker in Ubuntu
+
+`bash`
+./install_docker_ubuntu.sh
+
