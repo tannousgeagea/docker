@@ -12,8 +12,8 @@ _groupid=1000
 _hostname=detectioncontainer
 _network=host
 _container_name=deeplearning
-image_tag=v.01
-image_name=nn_module
+image_tag=v1.0
+image_name=object-detection-pytorch-cuda11.5.2
 
 
 if [ "$1" == "--build" ] || [ "$1" == "-b" ]; then
