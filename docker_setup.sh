@@ -13,6 +13,7 @@ _hostname=detectioncontainer
 _network=host
 _container_name=deeplearning
 image_tag=v1.0
+repo=tannousgeagea
 image_name=object-detection-pytorch-cuda11.5.2
 
 
@@ -21,7 +22,7 @@ if [ "$1" == "--build" ] || [ "$1" == "-b" ]; then
         --build-arg userid=$_userid \
         --build-arg group=$_group \
         --build-arg groupid=$_groupid \
-        -t $image_name:$image_tag .
+        -t $repo/$image_name:$image_tag .
 fi
 
 
@@ -33,7 +34,7 @@ if [ "$1" == "--run" ] || [ "$1" == "-r" ]; then
         --user $_user \
         -v /home/tannousgeagea/Documents/object-detection:/home/appuser/src \
         -v /home/tannousgeagea/Documents/data:/home/appuser/data \
-        $image_name:$image_tag
+        $repo/$image_name:$image_tag
 
 fi
 
