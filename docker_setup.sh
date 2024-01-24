@@ -32,8 +32,8 @@ if [ "$1" == "--run" ] || [ "$1" == "-r" ]; then
         --hostname $_hostname \
         --network $_network \
         --user $_user \
-        -v /home/tannousgeagea/Documents/object-detection:/home/appuser/src \
-        -v /home/tannousgeagea/Documents/data:/home/appuser/data \
+        -v /home/tannousgeagea/Documents/object-detection/src:/home/appuser/src \
+        -v /home/tannousgeagea/Documents/object-detection/data:/home/appuser/data \
         $repo/$image_name:$image_tag
 
 fi
