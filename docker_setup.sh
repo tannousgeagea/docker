@@ -12,7 +12,7 @@ _groupid=1000
 _hostname=detectioncontainer
 _network=host
 _container_name=deeplearning
-image_tag=v1.0
+image_tag=v3.0
 repo=tannousgeagea
 image_name=object-detection-pytorch-cuda11.5.2
 

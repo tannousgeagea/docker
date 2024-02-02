@@ -18,3 +18,5 @@ gunicorn
 supervisor
 requests
 tqdm
+albumentations
+albumentations[imgaug]
