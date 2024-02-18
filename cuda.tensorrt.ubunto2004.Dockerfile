@@ -82,5 +82,7 @@ ENV TRT_OSSPATH /workspace/TensorRT
 ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${TRT_OSSPATH}/build/out:${TRT_LIBPATH}"
 WORKDIR /workspace
 
+RUN rm -f /tmp/nv-tensorrt-local-repo-${OS}-${TAG}_1.0-1_amd64.deb
+
 USER appuser
 RUN ["/bin/bash"]
